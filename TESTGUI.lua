@@ -1,5 +1,4 @@
-local Color_UI = Color3.fromRGB(255, 0, 0)
-
+local Color_UI = Color3.fromRGB(102, 255, 51)
 local MIDN = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
