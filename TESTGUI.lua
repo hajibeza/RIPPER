@@ -1,3 +1,19 @@
+local RIPHUB = Instance.new("ScreenGui")
+local OPENCLOSE = Instance.new("TextButton")
+
+RIPHUB.Name = "RIPHUB"
+RIPHUB.Parent = game.CoreGui
+OPENCLOSE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OPENCLOSE.TextColor3 = Color3.fromRGB(102, 255, 51)
+OPENCLOSE.Name = "OPENCLOSE"
+OPENCLOSE.Parent = RIPHUB
+OPENCLOSE.Text = "OPEN/CLOSE"
+OPENCLOSE.Position = UDim2.new(0.044827585, 0, 0.263414639, 0)
+OPENCLOSE.Size = UDim2.new(0.0847916649, 0, .0845824406, 0)
+OPENCLOSE.MouseButton1Click:Connect(function()
+    game.CoreGui:FindFirstChild(Name_HUB .."," .. HUB_VERSION).Enabled = not game.CoreGui:FindFirstChild(Name_HUB.."," .. HUB_VERSION).Enabled
+end)
+
 local Color_UI = Color3.fromRGB(102, 255, 51)
 local MIDN = {}
 local UserInputService = game:GetService("UserInputService")
